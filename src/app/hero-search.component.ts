@@ -2,12 +2,13 @@
  * Created by nikita on 23/6/17.
  */
 import { Component, OnInit } from '@angular/core';
-import { Router }            from '@angular/router';
+import { Router } from '@angular/router';
 
-import { Observable }        from 'rxjs/Observable';
-import { Subject }           from 'rxjs/Subject';
+import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
 
 // Observable class extensions
+
 import 'rxjs/add/observable/of';
 
 // Observable operators

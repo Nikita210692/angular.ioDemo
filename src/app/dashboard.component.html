@@ -1,4 +1,13 @@
 <h3>Top Heroes</h3>
+<md-toolbar color="primary">
+
+  <button md-button [mdMenuTriggerFor]="appMenu"> Menu</button>
+  <md-menu #appMenu="mdMenu">
+    <button md-menu-item> Settings </button>
+    <button md-menu-item> Help </button>
+  </md-menu>
+</md-toolbar>
+
 <div class="grid grid-pad">
   <div *ngFor="let hero of heroes" [routerLink]="['/detail',hero.id]" class="col-1-4">
     <div class="module hero">

@@ -1,5 +1,18 @@
 <!--The whole content below can be removed with the new code.-->
+<body>
 <div style="text-align:center">
+  <md-toolbar color="primary">
+
+    <span>MyCompany</span>
+    <span class="example-spacer"></span>
+    <button md-button [mdMenuTriggerFor]="appMenu"><md-icon>menu</md-icon> Menu</button>
+
+  </md-toolbar>
+
+  <md-menu #appMenu="mdMenu">
+    <button md-menu-item> Settings </button>
+    <button md-menu-item> Help </button>
+  </md-menu>
   <h1>
     Welcome to {{title}}!!
   </h1>
@@ -17,4 +30,4 @@
     <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
   </li>
 </ul>
-
+</body>
